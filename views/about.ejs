@@ -1,0 +1,107 @@
+
+<!-- Include the shared header and navigation bar.
+     Pass the page title to the header partial. -->
+<%- include('partials/header', { title: 'About Me' }) %>
+
+<!-- Main Bootstrap container holds all About Me page sections. -->
+<main class="container py-5">
+
+    <!-- Banner section introduces the purpose of the About Me page.
+         Inline CSS controls the background colour, width and height. -->
+    <section class="text-center py-5 mb-5 text-white"
+             style="background-color: #17243b; width: 100%; min-height: 280px;">
+
+        <!-- Small introductory label displayed above the main heading. -->
+        <p class="text-uppercase fw-bold">A Little About Me</p>
+
+        <!-- Main heading introduces the student's personality and approach to learning. -->
+        <h1 class="fw-bold">Curious, Practical, and Always learning.</h1>
+
+        <!-- Supporting text briefly describes the content of this page. -->
+        <p class="lead mt-4">
+            My interests and the skills I'm working to develop.
+        </p>
+    </section>
+
+    <!-- Bootstrap row divides the section into an image column and a text column.
+         align-items-stretch allows both columns to stretch to the same height. -->
+    <section class="row align-items-stretch g-4 mb-5 py-5"
+             style="min-height: 520px;">
+
+        <!-- Left column displays the student's profile photograph. -->
+        <div class="col-md-4 text-center">
+
+            <!-- Load the profile image from the public/images directory.
+                 img-fluid makes the image responsive. -->
+            <img src="/images/mustafa-photo.jpg"
+                 alt="Portrait of Mustafa Khan"
+                 class="img-fluid rounded shadow">
+
+            <!-- Caption displayed underneath the profile photograph. -->
+            <p class="mt-2">Mustafa Khan – IT Student</p>
+        </div>
+
+        <!-- Right column contains the student's story and career goals.
+             Flexbox vertically centres the text within the column. -->
+        <div class="col-md-8 d-flex flex-column justify-content-center">
+
+            <!-- Heading introduces the student's educational and personal background. -->
+            <h2 class="fw-bold" style="font-family: Georgia, serif; font-size: 2.2rem;">
+                My Story
+            </h2>
+
+            <!-- Paragraph describes education, technical interests and motivation. -->
+            <p>
+                I'm currently studying Information Technology at Ontario Tech University, where I'm building a strong foundation in networking, computer systems, and information technology. Over time, I've developed a particular interest in network security, IT support, and network administration. I'm fascinated by how different systems communicate, how networks operate behind the scenes, and how technology connects people, devices, and organizations.
+                What I enjoy most about IT is that there is always something new to learn. I like understanding how things work rather than simply following instructions. Whether it's configuring a network device, troubleshooting a connection, setting up a virtual machine, or working through a technical problem, I find the process of identifying an issue and figuring out a solution rewarding.
+                Throughout my studies, I've gained hands-on experience with networking concepts, Cisco devices, Linux environments, virtual machines, and container technologies. I've worked on practical assignments involving IP addressing, routing, switching, network configuration, and troubleshooting. I've also explored web development and database technologies, which has helped me understand different areas of the IT field beyond networking.
+            </p>
+
+            <!-- Additional paragraph describes the student's practical learning approach. -->
+            <p>
+                I enjoy working through technical problems step by step.
+                Through coursework and lab practice, I've been developing my
+                knowledge of networking, Linux, virtual machines, containers,
+                and web development.
+            </p>
+
+            <!-- Heading introduces the student's future career objectives. -->
+            <h2 class="fw-bold" style="font-family: Georgia, serif; font-size: 2.2rem;">
+                Goals
+            </h2>
+
+            <!-- Paragraph explains the student's short-term and long-term career goals. -->
+            <p>
+                My main goal is to turn the knowledge I'm developing at university into practical skills that I can apply in a professional IT environment. I want to move beyond the classroom and gain experience working with real systems, networks, infrastructure, and technical challenges.
+                I'm particularly interested in starting my career in IT support, network administration, or cybersecurity. These areas would allow me to apply what I've learned while continuing to develop my technical abilities and understand how technology is managed and secured within an organization.
+                In the long term, I hope to build a career where I can take on greater responsibilities, contribute to important technical projects, and help organizations maintain reliable and secure technology environments.
+                Most importantly, I want to become someone who can approach unfamiliar problems with confidence, learn new technologies independently, and find practical solutions. I'm looking forward to seeing how far I can take my skills and where my journey in IT will lead.
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction video section allows visitors to watch the student's video. -->
+    <section class="mb-5">
+
+        <!-- Heading identifies the purpose of the video section. -->
+        <h2 class="text-center mb-4">My Introduction Video</h2>
+
+        <!-- Centre the video and limit its maximum width for better presentation. -->
+        <div class="text-center">
+
+            <!-- HTML video element provides playback controls to the visitor. -->
+            <video controls class="img-fluid" style="max-width: 750px;">
+
+                <!-- Load the MP4 video from the public/videos directory. -->
+                <source src="/videos/Introduction.mp4" type="video/mp4">
+
+                <!-- Fallback message appears if the browser cannot play the video. -->
+                Your browser does not support the video element.
+            </video>
+        </div>
+    </section>
+
+</main>
+
+<!-- Include the shared footer containing contact and social media links. -->
+<%- include('partials/footer') %>

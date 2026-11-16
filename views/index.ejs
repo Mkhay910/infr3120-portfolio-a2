@@ -1,8 +1,10 @@
 
 <%- include('partials/header', { title: 'Home' }) %>
 
+<!-- Main container holds all content on the Home page. -->
 <main class="container py-5">
 
+    <!-- Hero section introduces my portfolio and area of study. -->
     <section class="text-center py-5">
         <p class="text-uppercase fw-bold">Information Technology · Network Security</p>
 
@@ -11,53 +13,178 @@
         </h1>
 
         <p class="lead mt-3">
-            Hello, I'm Mustafa, an Information Technology student interested in
-            networking, troubleshooting, and cybersecurity. This portfolio
-            highlights my learning and project work.
+            Hello, I'm Mustafa, an Information Technology student interested in networking,
+            troubleshooting, and cybersecurity. This portfolio highlights my learning and project work.
         </p>
 
-        <a href="/projects" class="btn btn-primary mt-3">Explore My Projects</a>
+        <a href="/projects" class="btn btn-primary mt-3 me-2">Explore My Projects</a>
         <a href="/about" class="btn btn-outline-secondary mt-3">Get to Know Me</a>
     </section>
 
-    <section class="py-4">
-        <h2 class="text-center mb-4">What I'm Learning</h2>
+    <!-- About preview gives visitors a quick introduction before they open the About page. -->
+    <section class="row align-items-center py-5">
+        <div class="col-md-8">
+            <h2 class="fw-bold">A Little About Me</h2>
+            <p>
+                I'm studying Information Technology at Ontario Tech University.
+                My interests include network security, IT support, and system administration.
+                I enjoy learning how technology works and developing practical skills through coursework and lab activities.
+            </p>
+            <a href="/about" class="btn btn-outline-primary">Read More About Me</a>
+        </div>
 
+        <div class="col-md-4 text-center mt-4 mt-md-0">
+            <div class="card shadow-sm p-4">
+                <i class="fa-solid fa-user-graduate fa-3x mb-3"></i>
+                <h3 class="h5">IT Student</h3>
+                <p class="mb-0">Ontario Tech University</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning section displays the main areas I am currently developing. -->
+    <section class="py-5">
+        <h2 class="text-center fw-bold mb-4">What I'm Learning</h2>
+
+        <!-- Bootstrap grid organizes the learning cards into responsive columns. -->
         <div class="row g-4">
 
             <div class="col-md-4">
-                <div class="card h-100 p-3">
+                <div class="card h-100 p-4 shadow-sm">
+                    <i class="fa-solid fa-network-wired fa-2x mb-3"></i>
                     <h3 class="h5">Networking</h3>
-                    <p>
-                        Learning IP addressing, routing concepts, network
-                        services, and troubleshooting.
-                    </p>
+                    <p>Learning IP addressing, routing concepts, network services, and troubleshooting.</p>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card h-100 p-3">
+                <div class="card h-100 p-4 shadow-sm">
+                    <i class="fa-solid fa-server fa-2x mb-3"></i>
                     <h3 class="h5">Systems</h3>
-                    <p>
-                        Practising Linux commands, virtual machines,
-                        containers, and web services.
-                    </p>
+                    <p>Practising Linux commands, virtual machines, containers, and web services.</p>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card h-100 p-3">
+                <div class="card h-100 p-4 shadow-sm">
+                    <i class="fa-solid fa-shield-halved fa-2x mb-3"></i>
                     <h3 class="h5">Security</h3>
-                    <p>
-                        Developing my understanding of security principles,
-                        access control, and safe system configuration.
-                    </p>
+                    <p>Developing my understanding of security principles, access control, and safe system configuration.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
+    <!-- Skills section uses Bootstrap progress bars to represent areas of learning, not formal proficiency scores. -->
+    <section class="py-5">
+        <h2 class="text-center fw-bold mb-4">Technical Skills in Development</h2>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <label class="form-label fw-bold">Networking Fundamentals</label>
+                <div class="progress" role="progressbar" aria-label="Networking learning progress" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 65%">Learning</div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <label class="form-label fw-bold">Linux and Operating Systems</label>
+                <div class="progress" role="progressbar" aria-label="Linux learning progress" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 55%">Learning</div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <label class="form-label fw-bold">Virtual Machines and Containers</label>
+                <div class="progress" role="progressbar" aria-label="Virtualization learning progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 50%">Learning</div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <label class="form-label fw-bold">Web Development</label>
+                <div class="progress" role="progressbar" aria-label="Web development learning progress" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 45%">Learning</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured projects section gives visitors a preview of my practical coursework. -->
+    <section class="py-5">
+        <h2 class="text-center fw-bold mb-4">Featured Projects</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <i class="fa-solid fa-network-wired fa-2x mb-3"></i>
+                    <h3 class="h5">IP Addressing and Subnetting</h3>
+                    <p>Practised identifying network and host portions of IPv4 addresses and calculating subnet information.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <i class="fa-brands fa-linux fa-2x mb-3"></i>
+                    <h3 class="h5">Ubuntu Server Virtual Machine</h3>
+                    <p>Used an Ubuntu Server virtual machine and terminal commands to check connectivity and work with web services.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm p-3">
+                    <i class="fa-brands fa-docker fa-2x mb-3"></i>
+                    <h3 class="h5">Docker Nginx Containers</h3>
+                    <p>Ran Nginx using Docker containers and mapped host ports to access services locally.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/projects" class="btn btn-primary">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- Career interests section highlights the professional areas I would like to explore. -->
+    <section class="py-5">
+        <h2 class="text-center fw-bold mb-4">Career Interests</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center h-100 p-4">
+                    <i class="fa-solid fa-headset fa-2x mb-3"></i>
+                    <h3 class="h5">IT Support</h3>
+                    <p>Helping users troubleshoot technical issues and maintain reliable systems.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center h-100 p-4">
+                    <i class="fa-solid fa-network-wired fa-2x mb-3"></i>
+                    <h3 class="h5">Network Administration</h3>
+                    <p>Working with network devices, connectivity, infrastructure, and network services.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center h-100 p-4">
+                    <i class="fa-solid fa-user-shield fa-2x mb-3"></i>
+                    <h3 class="h5">Cybersecurity</h3>
+                    <p>Learning how to protect systems, manage access, and understand security risks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final call-to-action encourages visitors to contact me. -->
+    <section class="text-center py-5">
+        <h2 class="fw-bold">Let's Connect</h2>
+        <p class="lead">Feel free to visit my contact page to get in touch.</p>
+        <a href="/contact" class="btn btn-primary">Contact Me</a>
+    </section>
+
 </main>
 
+<!-- Include the shared footer containing contact and social media links. -->
 <%- include('partials/footer') %>

@@ -1,0 +1,105 @@
+
+<!-- Include the shared header and navigation bar.
+     Pass the page title to the header partial. -->
+<%- include('partials/header', { title: 'Projects' }) %>
+
+<!-- Main Bootstrap container holds all project page content. -->
+<main class="container py-5">
+
+    <!-- Introduction section explains the purpose of the projects page. -->
+    <section class="text-center mb-5">
+
+        <!-- Small label identifies the projects as selected coursework. -->
+        <p class="text-uppercase fw-bold">Selected Coursework</p>
+
+        <!-- Main heading introduces the projects and practical experience. -->
+        <h1 class="fw-bold">Projects & Practice</h1>
+
+        <!-- Supporting paragraph describes the skills demonstrated in the projects. -->
+        <p class="lead">Examples of skills I've developed through coursework and lab practice.</p>
+    </section>
+
+    <!-- This Bootstrap row organizes the project cards into a responsive grid.
+         The g-4 class adds spacing between the cards. -->
+    <div class="row g-4">
+
+        <!-- First project card describes IP addressing and subnetting practice. -->
+        <div class="col-md-6">
+            <div class="card h-100 p-3">
+
+                <!-- Project heading with Bootstrap font-weight and heading-size classes. -->
+                <h2 class="fw-bold h5">IP Addressing and Subnetting</h2>
+
+                <!-- Description explains the networking concepts practised. -->
+                <p>Practised identifying network and host portions of IPv4 addresses and calculating subnet information.</p>
+
+                <!-- Technologies and concepts associated with this project. -->
+                <p class="text-secondary">IPv4 · Subnetting · Network Fundamentals</p>
+            </div>
+        </div>
+
+        <!-- The second project card describes working with an Ubuntu Server virtual machine. -->
+        <div class="col-md-6">
+            <div class="card h-100 p-3">
+
+                <!-- Project heading identifies the virtual machine project. -->
+                <h2 class="fw-bold h5">Ubuntu Server Virtual Machine</h2>
+
+                <!-- Description explains the Linux and server-related practice. -->
+                <p>Used an Ubuntu Server virtual machine and terminal commands to check connectivity and work with web services.</p>
+
+                <!-- Technologies used in this project. -->
+                <p class="text-secondary">Ubuntu · VirtualBox · Linux</p>
+            </div>
+        </div>
+
+        <!-- Third project card describes containerization using Docker and Nginx. -->
+        <div class="col-md-6">
+            <div class="card h-100 p-3">
+
+                <!-- Project heading identifies the Docker project. -->
+                <h2 class="fw-bold h5">Docker Nginx Containers</h2>
+
+                <!-- Description explains running Nginx inside Docker containers. -->
+                <p>Ran Nginx using Docker containers and mapped host ports to access services locally.</p>
+
+                <!-- Technologies used in this project. -->
+                <p class="text-secondary">Docker · Nginx · Ports</p>
+            </div>
+        </div>
+
+        <!-- Fourth project card describes the local cloud services lab. -->
+        <div class="col-md-6">
+            <div class="card h-100 p-3">
+
+                <!-- Project heading identifies the cloud services project. -->
+                <h2 class="fw-bold h5">Local Cloud Services Lab</h2>
+
+                <!-- Description explains the local cloud environment explored. -->
+                <p>Explored a local AWS-style environment using LocalStack and AWS CLI as part of cloud computing coursework.</p>
+
+                <!-- Technologies and cloud concepts associated with this project. -->
+                <p class="text-secondary">LocalStack · AWS CLI · Cloud Concepts</p>
+            </div>
+        </div>
+
+        <!-- Fifth project card describes the responsive website project. -->
+        <div class="col-md-6">
+            <div class="card h-100 p-3">
+
+                <!-- Project heading identifies the web development project. -->
+                <h2 class="fw-bold h5">Responsive HTML and CSS Website</h2>
+
+                <!-- Description explains the website features and development work. -->
+                <p>Created a multi-page website using HTML and CSS, including navigation, responsive layouts and form controls.</p>
+
+                <!-- Technologies and design concepts used in this project. -->
+                <p class="text-secondary">HTML5 · CSS3 · Responsive Design</p>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- Include the shared footer containing contact and social media links. -->
+<%- include('partials/footer') %>

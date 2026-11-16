@@ -1,8 +1,23 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+/* Larger typography for About page */
+.about-heading h1 {
+    font-size: clamp(2.8rem, 5vw, 4rem);
 }
 
-a {
-  color: #00B7FF;
+.about-heading .lead {
+    font-size: 1.3rem;
+}
+
+.about-card h2 {
+    font-size: 2rem;
+}
+
+.about-card p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+
+.about-heading .eyebrow {
+    font-size: 1rem;
+    letter-spacing: 2.5px;
 }
