@@ -1,9 +1,10 @@
 # INFR3120 Assignment 2 – Express Portfolio Website
 
 **Student:** Mustafa Khan  
-**Student Number:** [Add your student number if required]  
+**Student Number:** 100946198 
 **Course:** INFR3120 – Web and Scripting Programming  
-**University:** Ontario Tech University  
+**University:** Ontario Tech University 
+**Professor**Ahmed Sheikh 
 **Assignment:** Assignment 2 – Express Portfolio Site  
 **Project Repository:** https://github.com/Mkhay910/infr3120-portfolio-a2
 
@@ -35,13 +36,13 @@
 22. References
 23. Author Information
 
----
+------
 
 # 1. Project Overview
 
-This project is a personal portfolio website developed for INFR3120 – Web and Scripting Programming at Ontario Tech University.
+This project is a portfolio website developed for INFR3120 – Web and Scripting Programming at Ontario Tech University.
 
-The website was built using Node.js, Express.js, and the EJS templating engine. Its purpose is to introduce me as an Information Technology student, present my interests in networking and network security, showcase selected coursework and technical projects, and provide visitors with a way to contact me.
+I built the website using Node.js, Express.js, and the EJS templating engine. Its purpose is to introduce me as an Information Technology student, present my interests in networking and network security, showcase selected coursework and technical projects, and provide visitors with a way to contact me.
 
 The application uses the Express Generator project structure and separates its functionality into routes, views, reusable partials, and public assets.
 
@@ -794,4 +795,4 @@ The npm start script launches the Express application through the generated star
 
 ### Step 5: Open the Website
 
-Open a
+Open the website @ http://localhost:3000
